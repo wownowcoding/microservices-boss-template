@@ -1,0 +1,1 @@
+export { default as VipayEcharts } from './vipayEcharts'
