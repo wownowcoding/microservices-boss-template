@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<title>boss管理后台</title>
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_1562572_0qvto491w0lq.css">
+	<link rel="stylesheet" href="/boss/public/lib/view-design/dist/styles/iview.css">
+	<link rel="stylesheet" href="/boss/public/lib/vue-material/dist/vue-material.min.css">
+	<link rel="stylesheet" href="/boss/public/lib/viewerjs/dist/viewer.css">
+	<script src="/boss/public/lib/vue/dist/vue.min.js"></script>
+	<script src="/boss/public/lib/vue-router/dist/vue-router.min.js"></script>
+	<script src="/boss/public/lib/vuex/dist/vuex.min.js"></script>
+	<script src="/boss/public/lib/view-design/dist/iview.min.js"></script>
+	<script src="/boss/public/lib/view-design/dist/locale/zh-CN.js"></script>
+  <script src="/boss/public/lib/view-design/dist/locale/en-US.js"></script>
+	<script src="/boss/public/lib/vue-i18n/dist/vue-i18n.min.js"></script>
+	<script src="/boss/public/lib/vue-material/dist/vue-material.min.js"></script>
+	<script src="/boss/public/lib/socket.io-client/dist/socket.io.js"></script>
+	<script src="https://jic.talkingdata.com/app/h5/v1?appid=64D3A58BE4684E99A7A6089F75B98B22&vn=mobile-boss-ssr&vc={{ env }}" async="async" onload="buryPerformance()"></script>
+	<script>
+		window.ssrConfig = '{{ config }}';
+		window.talkingCallbackFunction = '';
+		function buryPerformance() {
+			if (typeof window.talkingCallbackFunction === 'function') {
+				window.talkingCallbackFunction();
+			} else {
+				window.talkingCallbackFunction = 'success';
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="app"></div>
+
+</body>
+
+</html>

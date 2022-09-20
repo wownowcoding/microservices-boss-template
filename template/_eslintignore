@@ -1,0 +1,17 @@
+coverage
+node_modules
+node_modules_bak
+node_modules_production_bak
+view/lib
+public
+test
+webpack.config/configure
+webpack.config/libs
+yarn.lock
+.vendor/
+private
+tmp*
+dist
+view/dist
+.eslintrc
+script

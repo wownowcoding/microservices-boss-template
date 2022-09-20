@@ -1,0 +1,30 @@
+export default {
+  "wm_3_0_2": {
+    "popupTime": "弹窗时间",
+    "anyTimeOfDay": "每天任意时间内",
+    "fixedTimePeriodEveryDay": "每天固定时间段",
+    "queryPrompt": "查询提示",
+    "lightRain": "小雨",
+    "moderateRain": "中雨",
+    "heavyRain": "大到暴雨",
+    "paymentInstrumentsOccupiedByExistenceCannotBeSelected": "被存在占用的支付工具无法选择",
+    "expectThePlatformToDeserveIt": "预计平台应得",
+    "packagingFee": "包装费",
+    "every": "每",
+    "itemCollection": "件商品收取",
+    "enableMultipleCharges": "开启多件收费",
+    "pieceCollection": "件收取",
+    "packingFee": "打包费",
+    "settingThePackageFeeWillAffectTheUsersOrder": "设置打包费将会影响用户下单",
+    "associationStatus": "关联状态",
+    "groupPurchaseBusinessName": "团购商家名称",
+    "groupPurchaseMerchantStatus": "团购商家状态",
+    "lunchBoxFee": "餐盒费",
+    "serialNumber": "序号",
+    "groupPurchase": "团购商品",
+    "batchExport": "批量导出",
+    "exportSelected": "导出选中",
+    "exportAll": "导出全部",
+    "maximumWeight": "最大重量"
+  }
+}

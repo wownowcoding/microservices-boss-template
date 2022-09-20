@@ -1,0 +1,370 @@
+// 通用
+@import './utils'
+// 基本
+@import './base'
+// 查询页
+@import './queryPage'
+// 表单页
+@import './formPage'
+//门店
+@import "./store"
+// hack
+@import './hack'
+// md
+@import './materialoverwriter'
+@import './materialTheme'
+// iv
+@import './iviewoverwriter'
+// 历史辣鸡代码(迟早全替掉)
+@import './trash/buttons'
+@import './trash/form'
+html, body
+    position relative
+    height 100%
+    width 100%
+    min-width 1190px
+    min-height 480px
+    background #FFF
+    font-family Helvetica Neue, Helvetica, Arial, sans-serif !important
+    font-size 14px
+    color #000
+    margin 0
+    padding 0
+    overflow hidden
+
+    #app
+        width 100%
+        height 100%
+
+        .page
+            box-sizing border-box
+
+            .buttons
+                width 100%
+                display flex
+                justify-content center
+
+// /* 间隔 */
+.margin
+    &-right-gutter
+        margin-right $gutter_small
+
+    &-left-gutter
+        margin-left $gutter_small
+
+    &-top-gutter
+        margin-top $gutter_small
+
+    &-bottom-gutter
+        margin-bottom $gutter_small
+
+.padding
+    &-right-gutter
+        padding-right $gutter_small
+
+    &-left-gutter
+        padding-left $gutter_small
+
+    &-top-gutter
+        padding-top $gutter_small
+
+    &-bottom-gutter
+        padding-bottom $gutter_small
+.vipayTable .ivu-table-header .ivu-table-column-center
+    overflow initial
+.ivu-table-cell
+    p, span, div
+        padding 2px 0
+.input-title
+    white-space nowrap
+.user-select
+    -moz-user-select none
+    -khtml-user-select none
+    user-select: none
+.display-middle
+    display inline-block !important
+    vertical-align middle !important
+.position-center
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+.overflow
+    overflow:hidden; //超出的文本隐藏
+    text-overflow:ellipsis; //溢出用省略号显示
+    white-space:nowrap;
+.scroll-touch {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.ivu-breadcrumb-item-link
+    text-transform capitalize
+    
+.el-image-viewer__close
+    color #fff
+// 尺寸
+.input-width
+    &-small
+        width (($width_unit * 2 - $gutter_small) / 2) !important
+
+    &-normal
+        width $width_unit * 2 !important
+
+    &-longer
+        width $width_unit * 3 !important
+
+// 文本展示
+.input-primary-label
+    color $color_primary
+    margin-left $gutter_small
+    margin-right $gutter_small
+
+.input-tips-label
+    color $color_info
+    margin-left $gutter_small
+
+    &:before
+        content '*'
+        color $color_info
+
+.textarea-width
+    &-normal
+        _input_width(size:2, u:$width_unit * 2)
+
+    &-longer
+        _input_width(size:3, u:$width_unit * 2)
+
+.span-width
+    &-small
+        display inline-block
+        _input_width(size:1)
+
+    &-normal
+        display inline-block
+        _input_width(size:2)
+
+    &-longer
+        display inline-block
+        _input_width(size:3)
+
+/* 弹窗居中 */
+.vertical-center-modal
+    display flex
+    align-items center
+    justify-content center
+
+    .ivu-modal
+        top 0
+
+.btns-wrap
+    margin 30px 0
+    display flex
+    justify-content center
+
+.btn-margin
+    margin-right 12px
+
+/* 详情页 */
+.item_base
+    width 100%
+    margin-bottom 18px
+    margin-top 24px
+    display flex
+    align-items flex-start
+    vertical-align top
+
+    .label
+        width 100px
+        text-align right
+
+    .content
+        padding-left 12px
+        flex 1
+        width 0
+        word-wrap break-word
+
+.form-card .title
+    font-size 14px
+    font-weight bold
+
+.ivu-form-item-content
+    /* margin-top: 15px; */
+    display flex
+    flex-wrap wrap
+
+.ivu-form-item-content .input-title
+    margin-right 15px
+    font-size 13px
+
+/* ---------------------------------- */
+.page .title
+    font-size 14px
+    font-weight bold
+
+.page .buttons
+    width 100%
+    display flex
+    justify-content center
+
+.iview-form
+    margin-top 15px
+    display flex
+    flex-wrap wrap
+
+.iview-form .input-title
+    margin-right 15px
+    font-size 13px
+
+.iview-form .input-block
+    display flex
+    align-items center
+    margin-right 30px
+    margin-bottom 30px
+.el-popper
+    .el-cascader-node.in-active-path, .el-cascader-node.is-active, .el-cascader-node.is-selectable.in-checked-path
+        color $color_primary
+.el-radio__input.is-checked .el-radio__inner
+    border-color $color_primary
+.el-radio__input.is-checked .el-radio__inner
+    background-color $color_primary
+.el-radio__inner:hover
+    border-color $color_primary
+
+.page-divited
+    width 100%
+    display flex
+    margin-top 15px
+
+/* 创建应用-public */
+.application_creat--form
+    padding 30px 0 0 30px
+    width 480px
+
+.application_creat--btns
+    margin-left 160px
+    margin-bottom 30px
+
+    button
+        width 120px
+        margin-right 20px
+
+/* 创建活动-public */
+.activity_edit--form
+    padding 30px 0 0 30px
+    width 480px
+
+.activity_edit--btns
+    margin-left 160px
+    margin-bottom 30px
+
+    button
+        width 120px
+        margin-right 20px
+
+/* 分割线 */
+.pub_rules
+    box-sizing content-box
+    margin 40px 0 40px 50px
+    width 100%
+    height 2px
+    background #e5e5e5
+
+/* tips */
+.tips
+    font-size 12px
+    font-style italic
+    color $color_primary
+
+/* text */
+.text_
+    &primary
+        color $color_primary
+
+    &info
+        color $color_info
+
+/* card上下间距 */
+.pub_card
+    margin-top 12px
+
+/* 按钮组样式 */
+.pub_btns
+    margin-top 20px
+    display flex
+    justify-content center
+
+    button
+        margin 0 12px
+
+/* form */
+.pub_form
+    width 520px
+
+/*滚动条样式*/
+::-webkit-scrollbar
+    width: 6px
+    height: 8px
+
+::-webkit-scrollbar-thumb
+    border-radius: 4px
+    background: rgba(144, 147, 153, .3)
+
+    &:hover
+        background: rgba(144, 147, 153, .5)
+
+// 文件超长省略号
+.text-ellipsis
+    overflow: hidden
+    white-space nowrap
+    text-overflow ellipsis
+
+
+.reset-cancel-button--primary
+    background-color #fff !important
+    border-color rgb(220, 223, 230) !important
+    transition all .4s
+    &:hover
+        color #f39322 !important
+        border-color  #f39322 !important
+.reset-button--primary
+    background-color #f39322 !important
+    border-color #f39322 !important
+.ivu-message
+    z-index 99999!important
+.el-message-box__close,.el-dialog__headerbtn,.el-dialog__close
+    &:hover
+        color #f39322 !important
+button, html [type="button"], [type="reset"], [type="submit"]
+    text-transform capitalize
+.ivu-card-head {
+    padding: 6px 16px !important;
+}
+.ivu-card-extra {
+    top: 5px !important;
+}
+.ivu-table
+    font-size: 12px !important;
+
+::selection {
+    background-color: #f39322 !important;
+    color: #fff !important;
+    padding: 0 2px !important;
+    border-radius: 4px !important;
+    cursor: auto !important;
+}
+
+::-moz-selection {
+    background-color: #f39322 !important;
+    color: #fff !important;
+    padding: 0 2px !important;
+    border-radius: 4px !important;
+    cursor: auto !important;
+}
+
+::-webkit-selection {
+    background-color: #f39322 !important;
+    color: #fff !important;
+    padding: 0 2px !important;
+    border-radius: 4px !important;
+    cursor: auto !important;
+}

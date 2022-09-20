@@ -1,0 +1,89 @@
+.err.ivu-date-picker input
+    border-color red !important
+
+.ivu-poptip-content .tips
+    display flex
+    justify-content center
+    cursor pointer
+    color #818181
+    line-height 2.5
+
+.ivu-poptip-content .tips.active
+    color #2b85e4
+
+.ivu-poptip-content .tips:hover
+    color #2b85e4
+
+// 默认限制600px
+.ivu-modal-body
+    max-height 600px
+    overflow auto
+
+/* iview风格form */
+.ivew_research
+    width 90%
+    display flex
+    flex-wrap wrap
+
+.ivew_research > div
+    padding 15px
+
+.ivew_research_input_title
+    width 80px
+    display flex
+    align-items center
+
+.ivew_research_input_time
+    display flex
+    align-items center
+
+.ivew_research_input_time .to
+    margin 0 15px
+
+.ivew_research_input_block
+    display flex
+    align-items center
+
+/* .ivu-page .ivu-page-item {
+    border-radius: 24px !important;
+} */
+.ivu-page-item-active
+    background-color #f39322 !important
+
+.ivu-page-item-active a
+    color #fff !important
+
+.ivu-page .ivu-page-prev, .ivu-page .ivu-page-next
+    border 1px solid #dbdcdf !important
+
+/* border-radius: 24px; */
+.ivu-page .ivu-page-prev
+    margin-right 6px !important
+
+.ivu-page .ivu-page-next
+    margin-left 6px !important
+
+/* .ivu-tag {
+    line-height: 32px !important;
+} */
+
+// 用于解决tabs中下拉菜单被截断的问题
+// BOSS-709 https://jira.x-vipay.com:88/browse/BOSS-709
+.ivu-tabs.ivu-tabs-no-animation
+    overflow: visible
+
+// Modal组件默认居中
+.ivu-modal-wrap
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .ivu-modal
+        top: 0
+
+// Modal组件电脑小屏下限制最大高度，超出滚动
+@media screen and (max-width: 1400px) {
+    .ivu-modal-body {
+        max-height 400px
+    }
+}

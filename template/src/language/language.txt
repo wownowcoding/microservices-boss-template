@@ -1,0 +1,513 @@
+
+v1.loginNumber	登录手机号	Login Phone
+v1.recipientPhone	登录手机号	Login Phone
+v1.accountID	用户ID	Account ID
+v1.nickname	昵称	Nickname
+v1.avatar	头像	Avatar
+v1.gender	性别	Gender
+v1.birthday	出生日期	Birthday
+v1.Email	邮箱	E-mail
+v1.accountBinding	绑定账号	Account Binding
+v1.accountStatus	账号状态	Account Status
+v1.registrationTime	注册时间	Registration Time
+v1.lastLoginTime	最后一次登录时间	Last Login Time
+v1.clientVersion	客户端版本	Client Version
+v1.phoneModel	手机型号	Phone Model
+v1.receiverName	收货人姓名	Receiver Name
+v1.receiverPhoneNumber	收货人手机号	Receiver Phone
+v1.receivingAddress	收货人地址	Receiving Address
+v1.creationTime	创建时间	Creation Time
+v1.loginPassword	登录密码	Login Password
+v1.merchantID	商户ID	Merchant ID
+v1.merchantName	商户名称	Merchant Name
+v1.contactName	联系人名称	Contact Name
+v1.merchantStatus	商户状态	Status
+v1.storeLogo	商户logo	Store Logo
+v1.address	商户地址	Address
+v1.businessScope	经营范围	Business Scope
+v1.businessLicense	营业执照	Business License
+v1.storeID	门店ID	Store ID
+v1.storeName	门店名称	Store Name
+v1.contactPhone	联系手机号	Contact Phone
+v1.storePhotos	环境图片	Store Photos
+v1.announcement	公告	Announcement
+v1.openingHour	营业时间	Business Hours
+v1.taxRate	增值税率	VAT Rate
+v1.requiredPrice	起送价	Minimum Amount
+v1.requiredTime	备餐时间	Required Time
+v1.deliveryMode	配送方式	Delivery Mode
+v1.itemID	商品ID	Item ID
+v1.itemName	商品名称	Item Name
+v1.picture_photo	商品图片	Picture/Photo
+v1.sales	销售量	Sales
+v1.inStock	可售库存	In Stock
+v1.sequence	排序	Sequence
+v1.classify	分类	Classify
+v1.packingFee	餐盒费	Packing Fee
+v1.description	描述	Description
+v1.specification	规格	Specification
+v1.originalPrice	原价	Original Price
+v1.sellingPrice	销售价	Selling Price
+v1.dailyInventory	每日库存	Daily Inventory
+v1.property	属性	Property
+v1.deliverymanID	骑手ID	Deliveryman ID
+v1.contactPhoneNumber	联系手机号	Contact phone number
+v1.deliverymanE	骑手邮箱	Deliveryman E-mail
+v1.deliverymanAvatar	骑手头像	Deliveryman Avatar
+v1.deliverymanName	骑手名称	Deliveryman Name
+v1.deliverymanGender	骑手性别	Deliveryman gender
+v1.iDCard	身份证明	ID Card
+v1.attribution	骑手属性	Attribution
+v1.belongStation	所属配送站	Belong Station
+v1.deliveryEvaluation	配送评价	Delivery evaluation
+v1.workingStatus	工作状态	Working status
+v1.city	配送站城市	Delivery Station City
+v1.stationName	配送站名称	Station Name
+v1.stationManagerName	站长名称	Station Manager Name
+v1.stationManagerPhone	站长联系手机号	Station Manager Phone
+v1.platformDeliveryFee	平台配送费	Platform Delivery Fee
+v1.originalDeliveryPrice:   配送原价  Original Delivery Price
+v1.deliverymanAcceptLimit	骑手接单时限	Deliveryman accept limit
+v1.storesQuantity	门店数	Stores quantity
+v1.deliverymanQuantity	骑手数	Deliveryman quantity
+v1.couponCreationTime	优惠券新增时间	Creation Time
+v1.couponID	优惠券ID	Coupon ID
+v1.couponType	优惠券券类型	Coupon Type
+v1.couponName	券名称	Coupon Name
+v1.validityPeriod	可用时段	Validity Period
+v1.couponQuota	优惠券面值	Coupon Quota
+v1.eventTime	可领取日期	Event Time
+v1.released	已发放	Released
+v1.inventory	当前库存	Inventory
+v1.scenario	支付状态	Payment Status
+v1.eventStatus	发放状态	Event Status
+v1.sponsorship	核销场景	Sponsorship
+v1.couponTitle	优惠券标题	Coupon Title
+v1.discription	优惠券描述	Discription
+v1.recevieTime	领取时间	Recevie Time
+v1.couponCode	优惠券码	Coupon Code
+v1.couponStatus	优惠券状态	Coupon Status
+v1.couponOnDisplay	优惠券展示	Coupon on display
+v1.couponDistributionScenario	优惠券发放场景	Coupon distribution scenario
+v1.revocationTime	核销时间	Revocation time
+v1.activityCreationTime	活动创建时间	Activity Creation Time
+v1.activityID	活动ID	Activity ID
+v1.activityType	活动类型	Activity Type
+v1.activityName	活动名称	Activity Name
+v1.date	日期	Date
+v1.condition_quota	条件/面值	Condition/Quota
+v1.activityStatus	活动状态	Activity Status
+v1.activityTitle	活动标题	Activity Title
+v1.discription1	活动说明	Discription
+v1.orderCreationTime	订单创建时间	Order Creation Time
+v1.orderCompletionTime	订单完成时间	Order Completion Time
+v1.orderCancellationTime	订单取消时间	Order Cancellation Time
+v1.orderType	订单类型	Order Type
+v1.orderNumber	订单号	Order Number
+v1.orderStatus	订单状态	Order Status
+v1.businessStatus	业务状态	Business Status
+v1.orderPrice	订单金额	Order Price
+v1.totalItemAmount	商品总金额	Total item amount
+v1.totalPackingFee	总包装费	Total packing fee
+v1.VAT	增值税	VAT
+v1.estimatedMealTime	预计出餐时间	Estimated Prepare Time
+v1.estimatedDeliveryTime	预计送达时间	Estimated Delivery Time
+v1.itemQuantity	商品总数	Item quantity
+v1.deviceID	用户下单设备ID	Device ID
+v1.platformDiscountAmount	平台优惠金额	Platform discount amount
+v1.paymentTime	支付时间	Payment Time
+v1.userActualPaymentAmount	用户实付金额	User Actually Paid
+v1.deliveryStatus	配送状态	Delivery Status
+v1.deliveryMethod	配送方式	Delivery Mode
+v1.paymentMethod	支付方式	Payment Method
+v1.diningExperience	餐饮体验	Dining experience
+v1.merchantReceivableAmount	商家应收金额	Merchant receivable amount
+v1.relatedAfterOrder	关联售后订单	Related after-sale order
+v1.requestRefundAmount	申请退款金额	Request Refund Amount
+v1.refundMethod	退款方式	Refund Method
+v1.refundTime	退款时间	Refund time
+v1.actualRefundAmount	实退金额	Actual Refund Amount
+v1.refundType	退款类型	Refund Type
+v1.relatedDeliveryOrder	关联配送订单	Related Delivery Order
+v1.processing	进行中	In progress
+v1.completed	已完成	Completed
+v1.cancelled	已取消	Cancelled
+v1.waitingAccept	待接单	Waiting accept
+v1.accepted	已接单	Accepted
+v1.prepared	已出餐	prepared
+v1.cancelApplying	取消申请中	Cancel Applying
+v1.delivering	配送中	Delivering
+v1.waitingDeploy	待分配	Waiting deploy
+v1.arrivedMerchant	已到店	Arrived merchant
+v1.delivered	已送达	Delivered
+v1.refundApplying	退款申请中	Refund Applying
+v1.approved	已同意	Approved
+v1.refunding	退款中	Refunding
+v1.refunded	已退款	Refunded
+v1.merchantRefund	商户退款	Merchant refund
+v1.rejected	已驳回	Rejected
+v1.shouldSettleStoreAmount	应结门店金额	Should Settle Store Amount
+v1.platformFeeRate	平台佣金费率	Platform Fee rate
+v1.platformFeeAmount	平台佣金金额	Platform Fee amount
+v1.messageID	消息ID	Message ID
+v1.messageType	消息类型	Type
+v1.opinionType	意见方类型	Type
+v1.opinionPhoneNumber	登录手机号	Login Phone
+v1.opinionContent	意见内容	Opinion content
+v1.image	图片	Photo
+v1.customerManagement	客户管理	Customer Management
+v1.businessManagement	外卖管理	YumNow Management
+v1.marketingManagement	营销管理	Marketing management
+v1.systemManagement	系统管理	System Management
+v1.memberManagement	会员管理	Member Management
+v1.merchantManagement	商户管理	Merchant Management
+v1.deliverymanManagement	骑手管理	Deliveryman Management
+v1.distributionStationManagement	配送站管理	Distribution Station Management
+v1.orderManagement	订单管理	Order management
+v1.financialManagement	财务管理	Financial Management
+v1.couponManagement	优惠券管理	Coupon Management
+v1.activtityManagement	活动管理	Activtity Management
+v1.advertisingManagement	广告管理	Advertising Management
+v1.notificationManagement	消息管理	Notification Management
+v1.notification	消息	Notification
+v1.authorityConfiguration	账号权限	Authority Configuration
+v1.businessConfiguration	经营配置	Business Configuration
+v1.versionManagement	版本管理	Version Management
+v1.feedback	意见反馈	Feedback
+v1.operationLog	操作日志	Operation log
+v1.memberList	会员列表	Member List
+v1.merchantList	商户列表	Merchant List
+v1.storeList	门店列表	Store List
+v1.deliverymanList	骑手列表	Deliveryman List
+v1.distributionStationList	配送站列表	Distribution Station List
+v1.deliveryOrders	配送订单	Delivery orders
+v1.aftersalesOrders	售后订单	After-sales orders
+v1.deliverymanScheduling	骑手调度	Deliveryman Scheduling
+v1.aftersalesManagement	售后管理	After-sales management
+v1.storeBillingManagement	门店结算管理	Store Billing Management
+v1.couponConfiguration	优惠券配置	Coupon Configuration
+v1.couponTracking	优惠券跟踪	Coupon Tracking
+v1.activtityConfiguration	活动配置	Activtity Configuration
+v1.bannerManagement	banner管理	Banner Management
+v1.systemMessage	系统消息	System Message
+v1.accountManagement	操作员管理	Account Management
+v1.role_Authority	角色管理	Role & Authority
+v1.versionUpgrade	版本升级	Version Upgrade
+v1.feedbackList	意见列表	Feedback List
+v1.status	状态	Status
+v1.item	商品	Item
+v1.total 总计 total
+v1.addClassify	增加菜单	Add Classify
+v1.editClassify	编辑菜单	Edit Classify
+v1.deleteClassify	删除菜单	Delete Classify
+v1.merchant	商户	Merchant
+v1.store	门店	Store
+v1.review	审核	Review
+v1.addItem	添加商品	Add Item
+v1.selectAll	全选	Select All
+v1.publish	上架	Publish
+v1.unpublish	下架	Unpublish
+v1.chear	沽清	Clear
+v1.full	置满	Full
+v1.less	减	Less
+v1.delete	删除	Delete
+v1.itemSequence	商品排序	Item Sequence
+v1.picture	图片	Photo
+v1.edit	编辑	Edit
+v1.commodityReviewType	审核类型	Type
+v1.commodityReviewStatus	审核状态	Status
+v1.cancelChanges	取消商品编辑	Cancel Item Edit
+v1.commodityID	商品ID	Item ID
+v1.commodityVersion	商品版本	Version
+v1.viewDetails	查看详情	View
+v1.commodityName	名称	Name
+v1.photos	相片	Photos
+v1.specificationPrice	原价	Price
+v1.specificationPackingFee	餐盒费	Packing Fee
+v1.reason	原因	Reason
+v1.reEdit	重新编辑	Re-edit
+v1.saveItemInformation	保存商品信息	Save Item Information
+v1.saveInStock	保存可售库存	Save In Stock
+v1.requestTime	请求时间	Request Time
+v1.systemReviewDetails	审核详情	Review Details
+v1.reviewSpecificationsName	规格${number} 名称	Specifications${number} Name
+v1.reviewRejectTitle	拒绝	Reject
+v1.commodityCreateItemTitle	添加商品	Add Item
+v1.commodityEditItemTitle	编辑商品	Edit Item
+v1.specificationMaximum	最大值	Maximum
+v1.addSpecification	添加多规格	Add Specification
+v1.addProperty	添加属性	Add Property
+v1.specificationProperties 规格属性 Specification Properties
+v1.propertyName	属性${number} 名称	Property${number} Name
+v1.commodityOption	选择	Option
+v1.deleteOptions	删除选择	Delete Options
+v1.addOptions	添加选择	Add Options
+v1.deleteProperty	删除属性	Delete Property
+v1.automaticReplenishment	库存次日4点自动置满	stock is automatically filled at 4 o'clock the next day
+v1.commentTime	评价时间	Evaluation Time
+v1.loginPhone	登录手机号	Login Phone
+v1.commentUserReviews	用户点评	Member Reviews
+v1.commentManager	评价管理	Evaluation Management
+v1.commentStoreReply	门店回复	Store Reply
+v1.commentDeliveryScore	配送评分	Delivery Score
+v1.commentStoreRatings	门店评分	Store Ratings
+v1.commentStoreRatingStatus	门店评分状态	Store Ratings Status
+v1.commentUserReviewStatus	用户点评状态	Member Reviews Status
+v1.commentStoreReplyStatus	门店回复状态	Store Reply Status
+v1.commentManagerView	管理	Management
+v1.commentAnonymous	匿名情况	Anonymous
+v1.storeInformation	门店信息	Store Information
+v1.storeContactInformation	门店联系方式	Store Contact Number
+v1.riderInformation	骑手信息	Deliveryman Information
+v1.riderLoginMobilePhoneNumber	骑手登录手机号	Deliveryman Login Phone
+v1.riderContactPhoneNumber	骑手联系手机号	Deliveryman Contact Phone
+v1.distributionStation	配送站	Delivery Station
+v1.commodityGoodOrBad	商品踩赞	Item Like
+v1.commodityUserReviews	用户评价	Member Evaluation
+v1.comprehensiveInformation	信息	Information
+v1.agreeToRefundTime	同意退款时间	Agree Refund Time
+v1.agreeToRefund	同意退款	Agree Refund
+v1.agreeToReject	拒绝退款	Reject Refund
+v1.cancelToRefund	同意取消	Agree Cancel
+v1.cancelToReject	拒绝取消	Reject Cancel
+v1.refundStatus	退款状态	Refund Status
+v1.recipientInformation	收货人信息	Receiver Information
+v1.recipient	接收者	Recipient
+v1.orderDetail	订单详情	Order Detail
+v1.uploadVou	上传凭证	Upload Certificate
+v1.orderInformation	订单信息	Order Information
+v1.evaluationStatus	评价状态	Evaluation Status
+v1.evaluationStatus_have	已评价	Evaluated
+v1.evaluationStatus_no	待评价	Unevaluate
+v1.customerInfo	用户信息	Member Information
+v1.userLoginPhone	登录手机号	Login Phone
+v1.storeAddress	门店地址	Store Address
+v1.refund	退款	Refund
+v1.refundDetail	退款详情	Refund Details
+v1.refundSuccessTime	退款成功时间	Refund Success Time
+v1.refundOrderNumber	渠道退款订单号	Channel Refund Order Number
+v1.orderLog	订单日志	Order Log
+v1.operateTime	操作时间	Operation Time
+v1.operatingPlatform	操作平台	Operation Platform
+v1.operatingAccount	操作者账号	Operator Account
+v1.operatingContent	操作内容	Operation Content
+v1.informationRemarks	信息备注	Information Notes
+v1.payment	支付	Payment
+v1.paymentInformation	支付信息	Payment Information
+v1.paymentChannel	支付渠道	Payment Channel
+v1.paymentOrderNumber	渠道支付订单号	Channel Payment Order Number
+v1.count	数量	Quantity
+v1.serviceFeeRatio	服务费率	Service Rate
+v1.platformServiceFee	平台服务费	Platform Service Fee
+v1.commodityTotalOriginalPrice	商品总原价	Total Original Price
+v1.marketingType	营销类型	Marketing Type
+v1.discountType	优惠类型	Discount Type
+v1.marketingName	名称	Name
+v1.storeCommitment	门店承担金额	Store Commitment
+v1.platformCommitment	平台承担金额	Platform Commitment
+v1.actualDiscountAmount	实际优惠金额	Actual Discount Amount
+v1.bonusDeduction	奖励金抵扣	Bonus Deduction
+v1.mapInformation   地图信息    Map Information
+v1.deliveryInformation	配送信息	Delivery Settings
+v1.commentInformation	评价信息	Evaluation Information
+v1.channelRefundOrderNumber	渠道退款订单号	Channel Refund Order Number
+v1.semicolon	：	:
+v1.orderItemsTotal	订单总笔数	Total Order Quantity
+v1.storeSettlementTotalAmount	应结门店金额	Should Settle Store Amount
+v1.settlementSlipInformation	结算单信息	Statement Information
+v1.settlementSlipCreateTime	生成结算单时间	Statement Creation Time
+v1.lunchBoxCosts	总餐盒费	Total Packaging Fee
+v1.business	业务	Business
+v1.couponTerminate	终止	Terminate
+v1.send	发送	Send
+v1.addCoupon	添加优惠券	Add Coupon
+v1.fixedDurationTips	适用于索赔后1天且有效	Applicable 1 day after the claimand valid
+v1.stopCouponTips	提早终止不影响奖励，用户仍然可以接收奖励。	Early termination event does not affect the rewards users still can receive reward.
+v1.cash	现金	Cash
+v1.perPersonLimitTips	仅限 {{count}} 次。	Limtited to {{count}} time.
+v1.userTotalLimit	用户总限制	User Total Limit
+v1.member	用户	Member
+v1.selectListTips	优惠券的库存不足，请增加。	Coupon‘s inventory is insufficient please increas
+v1.addActivity	新建活动	Add Activity
+v1.unlimited	无限制	Unlimited
+v1.limited	有限制	Limited
+v1.userDayPartLimitTips	每个用户一天的限制 {{count}} 次	Limit of the day per user {{count}} times.
+v1.userDayPartLimitSmallTips	如果没有限制，请输入 0	If no limit,please enter 0.
+v1.userParticipationLimitTips	每个用户的总限制 {{count}} 次。	Total limit per user {{count}} times.
+v1.fullThenLess	满减	Full Discount
+v1.content	内容	Content
+v1.activitionDisplay	活动显示	Activition display
+v1.cycleTimes	循环周期	Cycle Times
+v1.object	对象	Object
+v1.messageName	消息名称	Message Name
+v1.sendObject	推送对象	Send Object
+v1.type	类型	Type
+v1.operatingTime	最后一次操作时间	Operating Time
+v1.withdraw	撤销	Withdraw
+v1.sendNews	发送	Send
+v1.withdrawThisNotification	撤回此通知	Withdraw This Notification
+v1.totalDiscountTitle	总商品折扣	Total amount of items discount
+v1.maxDiscountMoneyLabel	最高折扣金额	Maximum amount of discount
+v1.proportion	分摊比例	Proportion
+v1.platform	平台	Platform
+v1.notificationMessage	系统通知/消息	System Notification/Message
+v1.withdrawSuccess	撤销成功	Withdraw Success
+v1.sendSuccess	发送成功	Send Success
+v1.addSuccess	新增成功	Add Success
+v1.editSuccess	编辑成功	Edit Success
+v1.information	信息	Information
+v1.cancelOrder	取消订单	Cancel Order
+v1.stateChange	状态变更	Status Change
+v1.expirationTime	到期时间	Expiration Time
+v1.approvedMerchant	核销商户	Approved Merchant
+v1.approvedStore	核销门店	Approved Store
+v1.discountedPrice	优惠金额	Discounted Price
+v1.recipientName	领取人姓名	Recipient Name
+v1.recipientScene	接收场景	Received scene
+v1.couponSource	优惠券来源	Coupon Source
+v1.phone	手机号码	Phone
+v1.all	全部	All
+v1.timeout	超时	Delay
+v1.timeoutType	超时情况	Delay Information
+v1.deliveryTime	送达时间	Delivery Time
+v1.polymerizeOrder	聚合订单	Polymerize Order
+v1.businessOrder	业务订单	Business Order
+v1.channelOrder	渠道订单	Channel Order
+v1.userAccount	用户账号	User Account
+v1.rechargeAccount	充值号码	Recharge Account
+v1.operator	运营商	Operator
+v1.paymentOrder	支付订单	Payment Order
+v1.rechargeAmount	充值金额	Recharge Amount
+v1.sold	已售	Sold
+v1.isBulkOperation	是否批量操作？	Is bulk operation?
+v1.bossAccount	BOSS账号	BOSS Account
+v1.relationStoreNumber	关联门店数	Store Quantity
+v1.selectRelationStore	选择关联门店	Select Relation Store
+v1.busiessType	经营类型	Busiess Type
+v1.order	订单	Order
+v1.station	配送站	Delivery Station
+v1.salesman	销售员	Salesman
+v1.doBusinessStatus	营业状态	Business status
+v1.blackList	黑名单	Blacklist
+v1.id	ID	ID
+v1.logo	Logo	Logo
+v1.contactPerson	联系人	Contact Person
+v1.serviceFee	服务费	Service Fee
+v1.accountInformation	账号信息	Account Information
+v1.basicInformation	基本信息	Basic Information
+v1.businessInformation	营业信息	Business Information
+v1.deliverySettings	配送设置	Delivery Settings
+v1.qualificationInformation	资质信息	Qualification Information
+v1.billingInformation	结算信息	Billing Information
+v1.linkedMerchants	关联商家	Linked Merchant
+v1.password	密码	Password
+v1.contactNumber	联系电话	Contact Number
+v1.addressName	地址	Address
+v1.storeSignboard	门头照	Store Signboard
+v1.newStore	新店	New Store
+v1.accountHolderName	账户持有人	Account Holder Name
+v1.accountBank	开户行	Account Bank
+v1.bankCardNumber	银行账号	Bank Card Number
+v1.settlementMethod	结算方式	Settlement Method
+v1.announcementName	公告	Announcement
+v1.clear	沽清	Clear
+v1.participants	参与门店	Participants
+v1.billingStatus	结算状态	Billing Status
+v1.businessType	业务类型	Business Type
+v1.outletsAddress	网点地址	Outlets Address
+v1.PayGoOutletsName	PayGo网点名称	PayGo Outlets Name
+v1.outletsLatitude	网点纬度	Outlets Latitude
+v1.outletsLongitude	网点经度	Outlets Longitude
+v1.outletsName	网点名称	Outlets Name
+v1.channelName	渠道名称	Channel Name
+v1.baseSetting	基本设置	Base Setting
+v1.freeDeliveryFee	免配送费	Free Delivery Fee
+v1.proportionTips	平台和门店承担比例相加 = 100%	The proportion of platform and store commitment = 100%
+v1.deliveryArea	配送区域	Delivery Area
+v1.deliveryFeeSetting	配送费设置	Delivery Fee Setting
+v1.deliveryTimeSetting	配送时间设置	Delivery Time Setting
+v1.ErrorInDistanceDataPleaseCheck	距离数据有误请检查	Error In Distance Data, Please Check
+v1.PriceDataIsWrongPleaseCheck	价格数据有误请检查	Price Data Is Wrong, Please Check
+v1.selectDistributionStation	请选择配送站	Select Distribution Station
+v1.transactionOrderAmount	交易订单金额	Transaction Order Amount
+v1.newAddBusinessScope	新增一级经营范围	Add First business scope
+v1.deleteNotAllowed	有关联门店的经营范围不允许删除	The business scope of the associated stores is not allowed to be deleted
+v1.FirstClassBusinessScope	一级经营范围	First business scope
+v1.chineseName	中文名	Chinese Name
+v1.englishName	英文名	English Name
+v1.cambodianName	柬文名	Cambodian Name
+v1.confirmReceivingTime	确认收货时间	Confirm Delivery Time
+v1.voucher	凭证	Voucher
+v1.merchantNo	商户编号	Merchant No
+v1.merchantType	商户类型	Merchant Type
+v1.responsibilityName	负责人姓名	Responsibility Name
+v1.name	名称	Name
+v1.surname	姓	Surname
+v1.certificatesType	证件类型	Certificates Type
+v1.certificatesNumber	证件号码	Certificates Number
+v1.certificatesPhoto	证件照片	Certificates Photo
+v1.businessLicenseNo	营业执照号	Business License Number
+v1.legalPersonName	法人姓名	Legal Person Name
+v1.legalPersonIDPhoto	法人证件照	Legal Person ID Photo
+v1.businessAgreement	业务协议	Business Agreement
+v1.businessSelect	业务选择	Business Select
+v1.contractScannings	合同扫描件	Contract Scannings
+v1.adminAccconutInfo	管理员账号信息	Administrator Account Information
+v1.userName	用户名	User Name
+v1.confirmPassword	确认密码	Confirm Password
+v1.imgUploadTip	jpg、jpeg、png，≤5M	jpg、jpeg、png，≤5M
+v1.updateReason	修改原因	Update Reason
+v1.passwordAtypism	密码不一致	Password Atypism
+v1.totalMarketingActualBenefits	总营销实际优惠	Total Marketing Amount
+v1.lunchBoxFee	餐盒费	Packaging Fee
+v1.returnType	退回类型	Return Type
+v1.returnTime	退回时间	Return Time
+v1.returnReason	退回原因	Return Reason
+v1.refuseOrTransferOrderDetail	拒/转单详情	Refuse/Transfer Order Detail
+v1.theDayOrderNumber	当天交付的订单数	Number of orders delivered on the day
+v1.progressOrderNum	进行的订单数	Number of orders in progress
+v1.orderQuantityInDelivery	配送中订单数量	Order Quantity In Delivery
+v1.orderQuantityWithoutMeal	未取餐订单数量	Order Quantity Without Meal
+v1.OrderQuantityToBeReceived	待接订单数量	Order Quantity To Be Received
+v1.refuseOrTransferOrderRecord	拒/转单记录	Refuse/OrTransfer Order Record
+v1.personalInvitationCode	本人邀请码	Personal Invitation Code
+v1.typeOfInvitationSource	邀请来源类型	Type Of Invitation Source
+v1.registrationSourceInformation	注册来源信息	Registration Source Information
+v1.inviterAccount	邀请方账号	Inviter Account
+v1.thirdPartyAuthorizationInformation	第三方授权信息	Third Party Authorization Information
+v1.thirdPartyAuthorizationChannel	第三方授权渠道	Third Party Authorization Channel
+v1.region	地区	Region
+v1.homePageLink	主页链接	Home Page Link
+v1.batchEnable	批量启用	Batch Enable
+v1.batchDisabled	批量禁用	Batch Disabled
+v1.businessDay	营业日期	Business Date
+v1.reservationTime	预约时间	Reservation Time
+v1.minimumAmount	起送价	Minimum Amount
+v1.IDCardNumber	身份证号	ID Card Number
+v1.frontAndBackOfIDCard	身份证正面和反面	Front and back of ID card
+v1.notNeedPhone	无需创建登录手机	No need to create a login phone
+v1.bindingTime	绑定时间	Binding Time
+v1.operatorInformation	操作信息	Operator Information
+v1.deliverymanInformation	骑手信息	Deliveryman Information
+v1.handInStatus	上缴状态	Hand In Status
+v1.confirmStatus	确认状态	Confirm Status
+v1.orderAmount	订单总金额	Order Amount
+v1.deliveryman	骑手	Deliveryman
+v1.handInRecord	上缴记录	Hand In Record
+v1.confirmRecord	确认记录	Confirm Record
+v1.selectedAmount	已选金额	Selected Amount
+v1.handInPhoto	查看图片	Hand In Photo
+v1.confirmPhoto	确认图片	Confirm Photo
+v1.file	文件	File
+v1.operationTime	操作时间	Operation Time
+v1.operators	操作人	Operator
+v1.note	备注说明	Note
+v1.attachment	附件	Attachment
+v1.relatedOrderQuantity	相关订单数量	Related Order Quantity
+v1.deliveredTime	送达时间	Delivered Time
+v1.handInTime	上缴时间	Hand In Time
+v1.confirmTime	确认时间	Confirm Time
+v1.confirmOperator	确认操作人	Confirm Operator
+v1.confirmNote	确认备注说明	Confirm Note
+v1.orderNo	订单号	Order Number
+v1.phoneNumber	联系电话	Contact Number

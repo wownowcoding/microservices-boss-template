@@ -1,0 +1,105 @@
+
+
+/* .ivu-page-item-active a{
+	color: #fff !important;
+} */
+
+.md-button{
+	margin: 0;
+}
+
+.md-dialog.dialogWidth {
+	min-width: 500px;
+}
+
+/* 上传凭证/重新上传凭证 弹窗 ---------- */
+.md-dialog.dialogWidth_voucher {
+    width:  600px;
+}
+
+.dialogWidth_voucher .block {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.dialogWidth_voucher .block .t{
+    font-size:  15px;
+}
+
+.dialogWidth_voucher .block .v{
+    font-size:  13px;
+    color: #919191;
+}
+
+.dialogWidth_voucher  .cn{
+    margin-bottom: 15px;
+    color: #919191;
+}
+
+/* 上传凭证/重新上传凭证 弹窗------------end */
+
+.md-dialog.dialogWidth_push {
+    overflow: visible;
+}
+/*  */
+
+.dialog_content{
+	padding: 15px 60px;
+	box-sizing: border-box;
+}
+
+.dialog_content_ {
+    height: 700px;
+    overflow: scroll;
+}
+
+/* .md-list-item-content{
+	font-size: 12px !important;
+} */
+
+.md-select-menu{
+	z-index: 200;
+}
+
+.md-dialog .ml{
+	margin-top: 5px;
+	padding-left: 30px;
+}
+
+.md-theme-default :not(input):not(textarea)::selection{
+	background-color: #f39322;
+}
+
+.md-field.md-theme-default:before {
+    background-color: #f39322 !important;
+}
+.md-field.md-theme-default.md-focused label{
+    color: #f39322 !important;
+}
+
+.md-radio.md-theme-default.md-checked .md-radio-container{
+	border-color: #f39322 !important;
+}
+.md-radio.md-theme-default.md-checked .md-ripple{
+	color: #f39322 !important;
+}
+
+.md-radio.md-theme-default.md-checked .md-radio-container:after{
+	color: #f39322 !important;
+	background-color: #f39322 !important;
+}
+
+.md-checkbox.md-theme-default.md-checked .md-checkbox-container {
+	color: #f39322 !important;
+	background-color: #f39322 !important;
+	border-color: #f39322 !important;
+}
+
+.md-dialog{
+    max-height: 100%;
+    z-index: 10001 !important;
+}
+
+.md-overlay {
+	z-index: 10000 !important;
+}

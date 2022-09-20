@@ -1,0 +1,58 @@
+// 变量前缀为$ ,方法前缀为_
+
+// 变量
+// -------------------------------------------------------------------------------------------
+// 通用间隔
+$gutter_bigger = 24px
+$gutter = 10px
+$gutter_small = 4px
+$width_unit = 100px
+// 通用颜色
+$color_title = #1c2438
+$color_content = #495060
+$color_sub_color = #80848f
+$color_disabled = #bbbec4
+$color_disabled_text = #bbbec4
+$color_border = #dddee1
+$color_divider = #e9eaec
+$color_background = #f8f8f9
+$color_info = #2d8cf0
+$color_success = #19be6b
+$color_warning = #ff9900
+$color_error = #ed3f14
+$color_primary = #f39322
+$color_light_primary = #f7b44a
+$color_dark_primary = #eb670e
+// -------------------------------------------------------------------------------------------
+
+// 函数
+// -------------------------------------------------------------------------------------------
+// 多行文字缩略样式
+// 前置条件:外容器需要有固定的宽度(或最大宽度)
+_text_clamp(row = 2)
+  overflow hidden
+  text-overflow ellipsis
+  display -webkit-box
+  -webkit-line-clamp row
+  -webkit-box-orient vertical
+_position_abs_full()
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  height 100%
+  width 100%
+_position_abs_center()
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  margin auto
+_flex_center()
+  display flex
+  align-items center
+  justify-content center
+_input_width(size = 1, u = $width_unit, g = $gutter_small)
+  width (u + g) * size - g !important
