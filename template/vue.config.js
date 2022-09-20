@@ -30,8 +30,8 @@ const deleteFolder = (viewPath) => {
   }
 }
 //  删除 view 文件夹
-deleteFolder(path.resolve(__dirname, './view'));
-fs.mkdirSync(path.resolve(__dirname, './view'));
+deleteFolder(path.resolve(__dirname, './app/view'));
+fs.mkdirSync(path.resolve(__dirname, './app/view'));
 //  是否是开发模式
 const isDev = process.env.NODE_ENV === 'development';
 if (isDev) {
@@ -43,7 +43,7 @@ const vueConfig = {
     index: {
       entry: 'src/index.js',
       template: isDev ? 'local-index.ejs' : 'index.ejs',
-      filename: isDev ? 'index.html' : path.resolve(__dirname, `./view/index.tpl`),
+      filename: isDev ? 'index.html' : path.resolve(__dirname, `./app/view/index.tpl`),
       favicon: path.resolve(__dirname, 'favicon.ico'),
       chunks: ['vendor', 'common', 'index'],
       hash: true
@@ -91,7 +91,7 @@ const vueConfig = {
       }
     }
   },
-  indexPath: path.resolve(__dirname, './view'),
+  indexPath: path.resolve(__dirname, './app/view'),
   configureWebpack: config => {
     if (isDev) {
       //  开发模式下
@@ -188,7 +188,7 @@ const vueConfig = {
 
 if (!isDev) {
   vueConfig.publicPath = `${prefix && `/${prefix}` || ''}/public/dist`;
-  vueConfig.outputDir = resolve('/public/dist');
+  vueConfig.outputDir = resolve('/app/public/dist');
 } else {
   vueConfig.publicPath = `http://localhost:8001/`;
 }
