@@ -3,5 +3,5 @@
 通过 vue-cli 按照模版创建项目
 
 ```shell
-vue create --preset https://code.kh-super.net/projects/MOB/repos/microservices-ssr-templates --clone {prokect name}
+vue create --preset ssh://git@code.kh-super.net:7999/mob/microservices-ssr-templates.git --clone {prokect name}
 ```
