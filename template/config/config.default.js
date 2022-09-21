@@ -7,52 +7,52 @@ const execSyncBase = require('child_process').execSync;
 const os = require('os');
 const v8 = require('v8');
 const heapStatisticsEnum = {
-  total_heap_size: '总堆大小',
-  total_heap_size_executable: '总堆大小可执行文件',
-  total_physical_size: '总物理大小',
-  total_available_size: '总可用大小',
-  used_heap_size: '使用的堆大小',
-  heap_size_limit: '堆大小限制',
-  malloced_memory: '已分配的内存',
-  peak_malloced_memory: '分配的内存峰值',
-  does_zap_garbage: '覆盖堆垃圾',
-  number_of_native_contexts: '本机上下文数量',
-  number_of_detached_contexts: '分离上下文数',
-  code_and_metadata_size: '代码和元数据的大小',
-  bytecode_and_metadata_size: '字节码和元数据大小',
-  external_script_source_size: '外部脚本源大小',
-  space_size: '空间大小',
-  space_used_size: '空间使用大小',
-  space_available_size: '可用空间大小',
-  physical_space_size: '物理空间大小'
+	total_heap_size: '总堆大小',
+	total_heap_size_executable: '总堆大小可执行文件',
+	total_physical_size: '总物理大小',
+	total_available_size: '总可用大小',
+	used_heap_size: '使用的堆大小',
+	heap_size_limit: '堆大小限制',
+	malloced_memory: '已分配的内存',
+	peak_malloced_memory: '分配的内存峰值',
+	does_zap_garbage: '覆盖堆垃圾',
+	number_of_native_contexts: '本机上下文数量',
+	number_of_detached_contexts: '分离上下文数',
+	code_and_metadata_size: '代码和元数据的大小',
+	bytecode_and_metadata_size: '字节码和元数据大小',
+	external_script_source_size: '外部脚本源大小',
+	space_size: '空间大小',
+	space_used_size: '空间使用大小',
+	space_available_size: '可用空间大小',
+	physical_space_size: '物理空间大小'
 };
 
 //  换算数据大小
 const getRamSize = (data) => {
-  if (data > 1073741824) {
-    return `${(((((data / 1024).toFixed(3) - 0) / 1024).toFixed(3) - 0) / 1024).toFixed(3) - 0}GB`;
-  }
-  if (data > 1048576) {
-    return `${(((data / 1024).toFixed(3) - 0) / 1024).toFixed(3) - 0}MB`;
-  }
-  if (data > 1024) {
-    return `${(data / 1024).toFixed(3) - 0}KB`;
-  }
-  return `${data}`;
+	if (data > 1073741824) {
+		return `${(((((data / 1024).toFixed(3) - 0) / 1024).toFixed(3) - 0) / 1024).toFixed(3) - 0}GB`;
+	}
+	if (data > 1048576) {
+		return `${(((data / 1024).toFixed(3) - 0) / 1024).toFixed(3) - 0}MB`;
+	}
+	if (data > 1024) {
+		return `${(data / 1024).toFixed(3) - 0}KB`;
+	}
+	return `${data}`;
 }
 
 const getHeapStatistics = () => {
-  const heapStatistics = Object.assign({}, {
-    ...v8.getHeapStatistics(),
-    ...v8.getHeapCodeStatistics()
-  });
-  const heapSpaceStatistics = v8.getHeapSpaceStatistics();
-  const __strList = Object.keys(heapStatistics).map(e => `[${e}-${heapStatisticsEnum[e]}]: ${getRamSize(heapStatistics[e] - 0)}`).concat(heapSpaceStatistics.map(e => {
-    let __str = `空间名[${e.space_name}]: `;
-    __str += Object.keys(e).filter(q => q !== 'space_name').map(q => `(${q}-${heapStatisticsEnum[q]}[${getRamSize(e[q] - 0)}])`);
-    return __str;
-  }));
-  return __strList;
+	const heapStatistics = Object.assign({}, {
+		...v8.getHeapStatistics(),
+		...v8.getHeapCodeStatistics()
+	});
+	const heapSpaceStatistics = v8.getHeapSpaceStatistics();
+	const __strList = Object.keys(heapStatistics).map(e => `[${e}-${heapStatisticsEnum[e]}]: ${getRamSize(heapStatistics[e] - 0)}`).concat(heapSpaceStatistics.map(e => {
+		let __str = `空间名[${e.space_name}]: `;
+		__str += Object.keys(e).filter(q => q !== 'space_name').map(q => `(${q}-${heapStatisticsEnum[q]}[${getRamSize(e[q] - 0)}])`);
+		return __str;
+	}));
+	return __strList;
 }
 
 //  初始化 apollo 配置
@@ -67,7 +67,7 @@ const paths = {
  * @param {Egg.EggAppInfo} appInfo app info
  */
 module.exports = appInfo => {
-	const mongoStr = process.env['common.lifekh.nodejs.mongodb'] || '%7B%22url%22%3A%22mongodb%3A%2F%2Fcomposition_service%3Acomposition_service_2020%40172.16.27.10%3A27017%2Fcomposition_service%3FuseUnifiedTopology%3Dtrue%22%2C%22options%22%3A%7B%22useNewUrlParser%22%3Atrue%7D%2C%22dbNameEnum%22%3A%7B%22appDB%22%3A%22composition_service%22%7D%2C%22dbNames%22%3A%5B%22composition_service%22%5D%7D';
+	const mongoStr = /请配置你的 mnogodb url/
 	const mongoConfig = JSON.parse(decodeURIComponent(mongoStr));
 	mongoConfig.dbNameEnum = mongoConfig.dbNameEnum.appDB || dbNameEnum.dbNameEnum;
 	//  初始化获取 apollo 方法
@@ -96,13 +96,13 @@ module.exports = appInfo => {
 			pageUrl: '/boss/login'
 		},
 		keys: `${appInfo.name}_1586331786725_7164`,
-    view: {
-      root: path.join(appInfo.baseDir, 'app/view'),
-      defaultViewEngine: 'nunjucks',
-      cache: true,
-      mapping: {
-        '.tpl': 'nunjucks'
-      }
+		view: {
+			root: path.join(appInfo.baseDir, 'app/view'),
+			defaultViewEngine: 'nunjucks',
+			cache: true,
+			mapping: {
+				'.tpl': 'nunjucks'
+			}
 		},
 		mongoConfig,
 		//	给个数组用来记录当前请求，防止重启
@@ -110,12 +110,12 @@ module.exports = appInfo => {
 			restartStatus: false,
 			list: {}
 		},
-    static: {
-      prefix: `/${preFix.prefix}/public/`,
-      dynamic: true,
-      maxAge: 31536000,
-      buffer: true
-    },
+		static: {
+			prefix: `/${preFix.prefix}/public/`,
+			dynamic: true,
+			maxAge: 31536000,
+			buffer: true
+		},
 		security: {
 			// 关闭 csrf 防范，** NOTICE ** 有一定安全风险
 			csrf: {
@@ -129,7 +129,7 @@ module.exports = appInfo => {
 			rotateLogDirs: [logPath], // 自动按日切割目录
 			//  不打印线程及应用的日志，因为不符合运维的要求
 			disableConsoleAfterReady: true,
-			formatter(meta) {
+			formatter (meta) {
 				const date = `${((date = new Date()) => new Date(date - date.getTimezoneOffset() * 6e4).toJSON().substr(0, 23).replace('T', ' ').replace(/\./g, ','))(new Date())}`;
 				const __port = process && process.env && process.env.EGG_PORT && `:${process.env.EGG_PORT}` || '';
 				const message = meta && meta.message || '';
@@ -140,7 +140,7 @@ module.exports = appInfo => {
 				${meta.level === 'ERROR' && message || ''}`;
 			},
 			// ctx logger
-			contextFormatter(meta) {
+			contextFormatter (meta) {
 				const date = `${((date = new Date()) => new Date(date - date.getTimezoneOffset() * 6e4).toJSON().substr(0, 23).replace('T', ' ').replace(/\./g, ','))(new Date())}`;
 				const __port = process && process.env && process.env.EGG_PORT && `:${process.env.EGG_PORT}` || '';
 				const message = meta && meta.message || '';
@@ -168,7 +168,7 @@ module.exports = appInfo => {
 			fieldNameSize: 10000,
 			fieldSize: '10mb'
 		},
-		compositionApi: 'http://svc-lifekh-mp-nodejs-mobile-app-composition-sit:8080',
+		compositionApi: /请配置 api svc/,
 		// 业务封装的 fetch 方法配置
 		fetch: {
 			// 请求超时时间，默认 10s
